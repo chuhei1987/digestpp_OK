@@ -6,7 +6,7 @@
 *ISO/IEC 10118-3:2018									 		*
 *Standard of NIST FIPS-202						 				*
 *CHUHEI														    *
-*created on 2023-09-08											*
+*created on 2023-09-10											*
 ****************************************************************/
 
 
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 	cout << "File not found, please double check the correct location trying again." << endl;
 	}
 	else{
-	cout <<sha3(256).absorb(file).hexdigest() << endl;
+	cout << "SHA3-256(" <<argv[1] << ")= "<<sha3(256).absorb(file).hexdigest() << endl;
 	}
 	}
 }

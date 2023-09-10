@@ -6,7 +6,7 @@
 *ISO/IEC 10118-3:2018									 		*
 *												 				*
 *CHUHEI														    *
-*created on 2023-09-08											*
+*created on 2023-09-10											*
 ****************************************************************/
 
 
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 	cout << "File not found, please double check the correct location trying again." << endl;
 	}
 	else{
-	cout <<whirlpool().absorb(file).hexdigest() << endl;
+	cout << "WHIRLPOOL(" <<argv[1] << ")= "<<whirlpool().absorb(file).hexdigest() << endl;
 	}
 	}
 }

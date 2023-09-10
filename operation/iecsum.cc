@@ -3,7 +3,7 @@
 *iecsum.cc 														*
 *Public Domain													*
 *Standard of ISO/IEC 10118-3:2018								*
-*created on 2023-09-08										 	*
+*created on 2023-09-10										 	*
 *CHUHEI														    *
 *That contains functions except RIPEMD , which is 15 out of 17  *
 ****************************************************************/
@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
 	else if(!strcmp(argv[1],"sha224"))
 	cout <<"    SHA2-224: "<<sha224().absorb(file).hexdigest() << endl;
 	else if(!strcmp(argv[1],"sha512/224"))
-	cout <<"    SHA2-224: "<<sha512(224).absorb(file).hexdigest() << endl;
+	cout <<"SHA2-512/224: "<<sha512(224).absorb(file).hexdigest() << endl;
 	else if(!strcmp(argv[1],"sha3-224"))
 	cout <<"    SHA3-224: "<<sha3(224).absorb(file).hexdigest() << endl;
 	else if(!strcmp(argv[1],"streebog-256"))

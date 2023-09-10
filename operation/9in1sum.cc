@@ -3,7 +3,7 @@
 *9in1sum.cc 													*
 *Public Domain													*
 *Standard of ISO/IEC 10118-3:2018								*
-*created on 2023-09-08										 	*
+*created on 2023-09-10										 	*
 *CHUHEI														    *
 *That 9 methods are proven still fine by cryptanalysts          *
 ****************************************************************/
@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-	cout <<"SHA2-256: " <<sha256().absorb(file).hexdigest() << endl;
+	cout <<"SHA256(" <<argv[1] << ")= "<<sha256().absorb(file).hexdigest() << endl;
 	}
 	
 	
@@ -57,23 +57,23 @@ int main(int argc, char *argv[])
 	else{
 	
 	if(!strcmp(argv[1],"sm3"))
-	cout <<"         SM3: "<<sm3().absorb(file).hexdigest() << endl;
+	cout <<"SM3(" <<argv[1] << ")= "<<sm3().absorb(file).hexdigest() << endl;
 	else if(!strcmp(argv[1],"sha384"))
-	cout <<"    SHA2-384: "<<sha384().absorb(file).hexdigest() << endl;
+	cout <<"SHA384(" <<argv[1] << ")= "<<sha384().absorb(file).hexdigest() << endl;
 	else if(!strcmp(argv[1],"sha512"))
-	cout <<"    SHA2-512: "<<sha512().absorb(file).hexdigest() << endl;
+	cout <<"SHA512(" <<argv[1] << ")= "<<sha512().absorb(file).hexdigest() << endl;
 	else if(!strcmp(argv[1],"sha512/256"))
-	cout <<"SHA2-512/256: "<<sha512(256).absorb(file).hexdigest() << endl;
+	cout <<"SHA512/256(" <<argv[1] << ")= "<<sha512(256).absorb(file).hexdigest() << endl;
 	else if(!strcmp(argv[1],"sha3-256"))
-	cout <<"    SHA3-256: "<<sha3(256).absorb(file).hexdigest() << endl;
+	cout <<"SHA3-256(" <<argv[1] << ")= "<<sha3(256).absorb(file).hexdigest() << endl;
 	else if(!strcmp(argv[1],"sha3-384"))
-	cout <<"    SHA3-256: "<<sha3(384).absorb(file).hexdigest() << endl;
+	cout <<"SHA3-384(" <<argv[1] << ")= "<<sha3(384).absorb(file).hexdigest() << endl;
 	else if(!strcmp(argv[1],"sha3-512"))
-	cout <<"    SHA3-512: "<<sha3(512).absorb(file).hexdigest() << endl;
+	cout <<"SHA3-512(" <<argv[1] << ")= ""<<sha3(512).absorb(file).hexdigest() << endl;
 	else if(!strcmp(argv[1],"whirlpool"))
-	cout <<"   WHIRLPOOL: "<<whirlpool().absorb(file).hexdigest() << endl;
+	cout <<"WHIRLPOOL(" <<argv[1] << ")= "<<whirlpool().absorb(file).hexdigest() << endl;
 	else
-	cout <<"    SHA2-256: " <<sha256().absorb(file).hexdigest() << endl;	
+	cout <<"SHA256(" <<argv[1] << ")= "<<sha256().absorb(file).hexdigest() << endl;	
 	
 	}
 	

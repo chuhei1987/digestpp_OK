@@ -6,7 +6,7 @@
 *Being Revised by ISO/IEC 10118-3:2018					 		*
 *Standard of NIST FIPS-180-4					 				*
 *CHUHEI														    *
-*created on 2023-09-08											*
+*created on 2023-09-10											*
 ****************************************************************/
 
 
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 	cout << "File not found, please double check the correct location trying again." << endl;
 	}
 	else{
-	cout <<sha384().absorb(file).hexdigest() << endl;
+	cout << "SHA384(" <<argv[1] << ")= "<<sha384().absorb(file).hexdigest() << endl;
 	}
 	}
 }
