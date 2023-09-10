@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 	cout << "File not found, please double check the correct location trying again." << endl;
 	}
 	else{
-	cout << "SM3(" <<argv[1] << ")= "<<sm3().absorb(file).hexdigest() << endl;
+	cout <<sm3().absorb(file).hexdigest() <<"\t" << argv[1] << endl;
 	}
 	}
 }

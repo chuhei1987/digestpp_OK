@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 	cout << "File not found, please double check the correct location trying again." << endl;
 	}
 	else{
-	cout << "SHA3-512(" <<argv[1] << ")= "<<sha3(512).absorb(file).hexdigest() << endl;
+	cout <<sha3(512).absorb(file).hexdigest() <<"\t" << argv[1] << endl;
 	}
 	}
 }

@@ -57,35 +57,35 @@ int main(int argc, char *argv[])
 	else{
 	
 		 if(!strcmp(argv[1],"sm3"))
-	cout <<"         SM3: "<<sm3().absorb(file).hexdigest() << endl;
+	cout <<"         SM3: "<<sm3().absorb(file).hexdigest()<<"\t" << argv[1] << endl;
 	else if(!strcmp(argv[1],"sha384"))
-	cout <<"    SHA2-384: "<<sha384().absorb(file).hexdigest() << endl;
+	cout <<"    SHA2-384: "<<sha384().absorb(file).hexdigest()<<"\t" << argv[1] << endl;
 	else if(!strcmp(argv[1],"sha512"))
-	cout <<"    SHA2-512: "<<sha512().absorb(file).hexdigest() << endl;
+	cout <<"    SHA2-512: "<<sha512().absorb(file).hexdigest()<<"\t" << argv[1] << endl;
 	else if(!strcmp(argv[1],"sha512/256"))
-	cout <<"SHA2-512/256: "<<sha512(256).absorb(file).hexdigest() << endl;
+	cout <<"SHA2-512/256: "<<sha512(256).absorb(file).hexdigest()<<"\t" << argv[1] << endl;
 	else if(!strcmp(argv[1],"sha3-256"))
-	cout <<"    SHA3-256: "<<sha3(256).absorb(file).hexdigest() << endl;
+	cout <<"    SHA3-256: "<<sha3(256).absorb(file).hexdigest()<<"\t" << argv[1] << endl;
 	else if(!strcmp(argv[1],"sha3-384"))
-	cout <<"    SHA3-256: "<<sha3(384).absorb(file).hexdigest() << endl;
+	cout <<"    SHA3-384: "<<sha3(384).absorb(file).hexdigest()<<"\t" << argv[1] << endl;
 	else if(!strcmp(argv[1],"sha3-512"))
-	cout <<"    SHA3-512: "<<sha3(512).absorb(file).hexdigest() << endl;
+	cout <<"    SHA3-512: "<<sha3(512).absorb(file).hexdigest() <<"\t" << argv[1]<< endl;
 	else if(!strcmp(argv[1],"whirlpool"))
-	cout <<"   WHIRLPOOL: "<<whirlpool().absorb(file).hexdigest() << endl;
+	cout <<"   WHIRLPOOL: "<<whirlpool().absorb(file).hexdigest()<<"\t" << argv[1] << endl;
 	else if(!strcmp(argv[1],"sha"))
-	cout <<"        SHA1: "<<sha1().absorb(file).hexdigest() << endl;
+	cout <<"        SHA1: "<<sha1().absorb(file).hexdigest() <<"\t" << argv[1]<< endl;
 	else if(!strcmp(argv[1],"sha224"))
-	cout <<"    SHA2-224: "<<sha224().absorb(file).hexdigest() << endl;
+	cout <<"    SHA2-224: "<<sha224().absorb(file).hexdigest() <<"\t" << argv[1]<< endl;
 	else if(!strcmp(argv[1],"sha512/224"))
-	cout <<"SHA2-512/224: "<<sha512(224).absorb(file).hexdigest() << endl;
+	cout <<"    SHA2-224: "<<sha512(224).absorb(file).hexdigest() <<"\t" << argv[1]<< endl;
 	else if(!strcmp(argv[1],"sha3-224"))
-	cout <<"    SHA3-224: "<<sha3(224).absorb(file).hexdigest() << endl;
+	cout <<"    SHA3-224: "<<sha3(224).absorb(file).hexdigest() <<"\t" << argv[1]<< endl;
 	else if(!strcmp(argv[1],"streebog-256"))
-	cout <<"STREEBOG-256: "<<streebog(256).absorb(file).hexdigest() << endl;
+	cout <<"STREEBOG-256: "<<streebog(256).absorb(file).hexdigest()<<"\t" << argv[1] << endl;
 	else if(!strcmp(argv[1],"streebog-512"))
-	cout <<"STREEBOG-512: "<<streebog(512).absorb(file).hexdigest() << endl;
+	cout <<"STREEBOG-512: "<<streebog(512).absorb(file).hexdigest() <<"\t" << argv[1]<< endl;
 	else
-	cout <<"    SHA2-256: " <<sha256().absorb(file).hexdigest() << endl;	
+	cout <<"    SHA2-256: " <<sha256().absorb(file).hexdigest() <<"\t" << argv[1]<< endl;	
 	
 	}
 	

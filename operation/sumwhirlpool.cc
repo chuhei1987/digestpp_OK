@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 	cout << "File not found, please double check the correct location trying again." << endl;
 	}
 	else{
-	cout << "WHIRLPOOL(" <<argv[1] << ")= "<<whirlpool().absorb(file).hexdigest() << endl;
+	cout <<whirlpool().absorb(file).hexdigest()<<"\t" << argv[1] << endl;
 	}
 	}
 }
